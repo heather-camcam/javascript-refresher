@@ -38,11 +38,11 @@ var removeNullAndFalseElements = function(array) {
 }
 
 var reverseWordsInArray = function(array) {
-  var results = [];
+  var result = [];
   for (var i = 0; i < array.length; i++) {
-    array[i].split('').reverse().join('');
+    result.push(array[i].split("").reverse().join(""));
   }
-  return array
+  return result;
 }
 
 var everyPossiblePair = function(array) {
