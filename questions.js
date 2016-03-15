@@ -100,7 +100,13 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+  var count = null
+  for (var i = 0; i < array.length; i++) {
+    if(array[i] === (array[i].split('').reverse().join(''))) {
+      count ++
+    }
+  }
+  return count
 }
 
 var shortestWord = function(array) {
