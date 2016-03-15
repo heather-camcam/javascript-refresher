@@ -90,7 +90,13 @@ var getFirstHalf = function(string) {
 }
 
 var makeNegative = function(number) {
-  return 'Write your method here';
+  var result = null
+  if (number < 0) {
+    return number
+  } else {
+    result = (number - (number * 2))
+    return result
+  }
 }
 
 var numberOfPalindromes = function(array) {
